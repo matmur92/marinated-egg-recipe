@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222222; /* Dark background */
+    color: #f1f1f1; /* Light text */
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+    background-color: #333333; /* Dark header */
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.horizontal-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.horizontal-nav ul li {
+    margin-right: 20px;
+}
+
+.horizontal-nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.horizontal-nav ul li a:hover {
+    color: #ffeb3b; /* Yellow hover effect */
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ffeb3b; /* Yellow for headings */
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Map section */
+.map-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Reduce size of page */
+main {
+    max-width: 600px;
+}
+
+/* Smaller font for the ingredients */
+ul li {
+    font-size: 1rem;
+}
