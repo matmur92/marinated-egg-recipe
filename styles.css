@@ -15,7 +15,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #333333; /* Dark header */
+    background-color: #4CAF50; /* Pastel green */
     color: white;
     padding: 10px 0;
     margin-bottom: 20px;
@@ -25,26 +25,24 @@ h1 {
     font-size: 2rem;
 }
 
-.horizontal-nav ul {
+nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
 }
 
-.horizontal-nav ul li {
+nav ul li {
+    display: inline;
     margin-right: 20px;
 }
 
-.horizontal-nav ul li a {
+nav ul li a {
     color: #f1f1f1;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-.horizontal-nav ul li a:hover {
+nav ul li a:hover {
     color: #ffeb3b; /* Yellow hover effect */
 }
 
