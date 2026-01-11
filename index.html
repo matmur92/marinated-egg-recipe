@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marinated Egg Recipe</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </head>
 <body>
     <header>
         <h1>Marinated Egg Recipe</h1>
+        <nav>
+            <ul>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#steps">Steps</a></li>
+                <li><a href="#map">Where to Buy Asian Food</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section>
+        <section id="ingredients">
             <h2>Ingredients</h2>
             <ul>
                 <li>2 Eggs</li>
@@ -24,12 +32,17 @@
             </ul>
         </section>
 
-        <section>
+        <section id="steps">
             <h2>Instructions</h2>
             <p>1. Boil the eggs for 7-8 minutes until hard-boiled.</p>
             <p>2. Prepare the marinade by mixing soy sauce, rice vinegar, sugar, and water in a bowl.</p>
             <p>3. Peel the eggs and place them in the marinade for at least 2 hours.</p>
             <p>4. Serve the marinated eggs with your favorite dishes or as a snack!</p>
+        </section>
+
+        <section id="map">
+            <h2>Where to Buy Asian Food Near You</h2>
+            <div id="googleMap"></div>
         </section>
 
         <section>
@@ -44,6 +57,19 @@
     <footer>
         <p>Recipe by ChatGPT | Simple & Delicious!</p>
     </footer>
+
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('googleMap'), {
+                center: {lat: 40.730610, lng: -73.935242}, // Set to your location
+                zoom: 12
+            });
+            var marker = new google.maps.Marker({
+                position: {lat: 40.730610, lng: -73.935242}, // Set to your location
+                map: map,
+                title: "Asian Food Store"
+            });
+        }
+    </script>
 </body>
 </html>
-
